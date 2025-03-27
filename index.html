@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQI & Property Value Estimator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Air Quality Index & Property Value Estimator</h1>
+        <label for="city">Select Your City</label>
+        <select id="city">
+            <option value="">Choose your City</option>
+            <option value="DELHI">Delhi</option>
+            <option value="MUMBAI">Mumbai</option>
+            <option value="BANGALORE">Bangalore</option>
+            <option value="HYDERABAD">Hyderabad</option>
+            <option value="CHENNAI">Chennai</option>
+            <option value="KOLKATA">Kolkata</option>
+        </select>
+        
+        <label for="locality">Select Your Locality</label>
+        <select id="locality" disabled>
+            <option value="">Choose your Locality</option>
+        </select>
+        
+        <button id="calculate" disabled>Get Results</button>
+        
+        <div id="results" class="hidden">
+            <h2>Results for <span id="selected-locality"></span></h2>
+            <p><strong>AQI:</strong> <span id="aqi"></span></p>
+            <p><strong>Health Risk Score:</strong> <span id="health-risk"></span></p>
+            <p><strong>Normal Medical Cost:</strong> ₹<span id="medical-cost"></span></p>
+            <p><strong>Health Cost Premium:</strong> ₹<span id="health-cost-premium"></span></p>
+            <p><strong>Adjusted Property Value:</strong> ₹<span id="adjusted-property-value"></span></p>
+            <p><strong>Normal Property Value:</strong> ₹<span id="normal-property-value"></span></p>
+            <p><strong>Difference in Property Value Due to AQI:</strong> ₹<span id="value-difference"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

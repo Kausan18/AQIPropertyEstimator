@@ -1,0 +1,120 @@
+/* Improved styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background: linear-gradient(to right, rgba(4, 38, 71, 0.9), rgba(0, 242, 254, 0.9));
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 450px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(244, 238, 238, 0.5);
+}
+
+h1 {
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin: 12px 0 6px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+select, button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+select {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    cursor: pointer;
+}
+
+button {
+    background: #fff;
+    color: #0073e6;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0073e6;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background: #bbb;
+    cursor: not-allowed;
+}
+
+#results {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    margin: 8px 0;
+}
+
+span {
+    font-weight: bold;
+    color: #0073e6;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+#solutions {
+    color: white; /* Change text color */
+    background-color: #5f5e5e; /* Change background color */
+    padding: 15px;
+    border-radius: 20px;
+    text-align:left;
+}
+
